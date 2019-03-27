@@ -13,6 +13,41 @@
 const example = {
   "id": 0,
   "name": "Example",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
+
+const mitzi = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "examples@you.edu",
+  "gender": "F"
+}
+
+const example = {
+  "id": 0,
+  "name": "Example",
+  "email": "examples@you.edu",
+  "gender": "F"
+}
+
+const example = {
+  "id": 0,
+  "name": "Example",
+  "email": "examples@you.edu",
+  "gender": "F"
+}
+
+const example = {
+  "id": 0,
+  "name": "Example",
+  "email": "examples@you.edu",
+  "gender": "F"
+}
+
+const example = {
+  "id": 0,
+  "name": "Example",
   "email": "examples@you.edu",
   "gender": "F"
 }
