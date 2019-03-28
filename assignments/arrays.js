@@ -104,9 +104,9 @@ let carYears = [];
 
 carY = inventory;
 for (let i = 0; i < carY.length; i++) {
-    carYears = carY[i].car_year; 
-    console.log(carYears);
-}
+    carYears.push(carY[i].car_year); 
+}   
+console.log(carYears);
 
 console.log("THIS IS A LINE BREAK");
 
@@ -114,20 +114,29 @@ console.log("THIS IS A LINE BREAK");
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars = [];
 
-
 carY = inventory;
 for (let i = 0; i < carY.length; i++) {
-    carYears = carY[i].car_year; 
+    carYears.push(carY[i].car_year); 
 
-    if(carYears[i] < 2000) {
-        oldCars.push(carYears[i]);
+    if(carYears[i] < 2000){
+        oldCars.push(carYears[i])
     }
-}
+}   
+console.log(oldCars);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = [];
-console.log();
+
+specificCars = inventlry;
+for (let i = 0; i < specificCars.length; i++) {
+
+    if(specificCars[i].car_make === "Audi" || specificCars[i].car_make === "BMW"){
+        BMWAndAudi.push(specificCars[i])
+    }
+}   
+
+console.log(BMWAndAudi);
 
 
 
